@@ -1,5 +1,5 @@
 const feathers = require('@feathersjs/feathers');
-const app = feathers();
+const app = feathers(); 
 
 // A messages service that allows to create new
 // and return all existing messages
