@@ -20,6 +20,7 @@ jobs:
       - name: Adding Known Hosts
         run: ssh-keyscan -H -p40 ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
       - name: Building package
+        run: npm ci
         run: npm run build
       - name: Deploy with rsync
         run: rsync -avz ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}/chess-server/
