@@ -24,4 +24,4 @@ jobs:
       - name: Building package
         run: npm run build
       - name: Deploy with rsync
-        run: rsync -avz ./dist/chess-server ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/kevin/chess-server/
+        run: rsync -avz ./dist/chess-server ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/chess-server
