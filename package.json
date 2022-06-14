@@ -1,0 +1,27 @@
+{
+  "name": "chess-server",
+  "version": "1.0.0",
+  "description": "chess server",
+  "main": "index.js",
+  "dependencies": {
+    "pkg": "^5.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "pkg . --target node14-linux-x64 --out-path dist"
+  },
+  "bin": "build/index.js", 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Szevin/chess-server.git"
+  },
+  "keywords": [],
+  "author": "Szevin",
+  "license": "GNU GPLv2",
+  "bugs": {
+    "url": "https://github.com/Szevin/chess-server/issues"
+  },
+  "homepage": "https://github.com/Szevin/chess-server#readme"
+}
