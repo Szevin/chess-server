@@ -4,6 +4,7 @@
   "description": "chess server",
   "main": "index.js",
   "dependencies": {
+    "@feathersjs/feathers": "^4.5.15",
     "pkg": "^5.7.0"
   },
   "devDependencies": {},
@@ -12,7 +13,7 @@
     "start": "nodemon index.js",
     "build": "pkg . --target node14-linux-x64 --out-path dist"
   },
-  "bin": "build/index.js", 
+  "bin": "build/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Szevin/chess-server.git"
